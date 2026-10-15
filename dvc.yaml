@@ -1,0 +1,34 @@
+stages:
+  preparer:
+    cmd: python src/preparer.py
+    deps:
+      - data/transactions.csv
+      - src/preparer.py
+    params:
+      - preparation.test_size
+      - preparation.random_state
+    outs:
+      - data/prepare/train.csv
+      - data/prepare/test.csv
+  entrainer:
+    cmd: python src/entrainer.py
+    deps:
+      - data/prepare/train.csv
+      - src/entrainer.py
+    params:
+      - entrainement.n_estimators
+      - entrainement.max_depth
+      - entrainement.random_state
+    outs:
+      - models/model.pkl
+  evaluer:
+    cmd: python src/evaluer.py
+    deps:
+      - data/prepare/test.csv
+      - models/model.pkl
+      - src/evaluer.py
+    outs:
+      - reports/confusion.png
+    metrics:
+      - reports/metrics.json:
+          cache: false
