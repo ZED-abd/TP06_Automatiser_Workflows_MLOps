@@ -1,0 +1,29 @@
+name: tp6-workflows
+prefect-version: 3.9.1
+
+build: null
+push: null
+
+# Fixer TP6_PROJECT_DIR au chemin absolu du clone avant prefect deploy.
+pull:
+  - prefect.deployments.steps.set_working_directory:
+      directory: "{{ $TP6_PROJECT_DIR }}"
+
+deployments:
+  - name: hebdomadaire-pool
+    description: Reentrainement DVC avec validation du F1, chaque lundi a 6 h au Maroc.
+    entrypoint: flow_mlops.py:reentrainement
+    parameters: {}
+    tags:
+      - tp06
+    concurrency_limit: 1
+    work_pool:
+      name: pool-tp
+      work_queue_name: default
+      job_variables:
+        working_dir: "{{ $TP6_PROJECT_DIR }}"
+        stream_output: true
+    schedules:
+      - cron: "0 6 * * 1"
+        timezone: Africa/Casablanca
+        active: true

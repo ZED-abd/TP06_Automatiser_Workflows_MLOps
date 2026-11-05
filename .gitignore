@@ -11,4 +11,8 @@ mlruns/
 # Preferences locales de l'editeur
 .vscode/
 
+# Journaux, scripts de verification et processus locaux du TP6
+.local/
+tmp/
+
 # ATTENTION : pas de data/, models/ ni reports/ ici : DVC s'en charge
