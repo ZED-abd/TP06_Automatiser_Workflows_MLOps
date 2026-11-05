@@ -3,7 +3,7 @@ preparation:
   random_state: 42      # graine du decoupage
 entrainement:
   n_estimators: 300     # nombre d'arbres
-  max_depth: 2         # profondeur maximale
+  max_depth: 12         # profondeur maximale
   random_state: 42      # graine du modele
 validation:
   seuil_f1: 0.82        # sous ce seuil, le modele est refuse
