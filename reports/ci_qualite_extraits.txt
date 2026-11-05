@@ -1,0 +1,13 @@
+Extraits des journaux GitHub Actions recuperes avec le connecteur GitHub.
+Depot : ZED-abd/TP06_Automatiser_Workflows_MLOps
+
+Run 42116743507 / job 127558276214 / commit 09e329d
+Etape : Verifier la regle de qualite
+2026-11-05T21:54:41.8338547Z F1 = 0.25 | seuil = 0.82
+2026-11-05T21:54:41.8338873Z ECHEC : modele refuse
+2026-11-05T21:54:41.8388165Z ##[error]Process completed with exit code 1.
+
+Run 42117117784 / job 127559591024 / commit 9bbc002
+Etape : Verifier la regle de qualite
+2026-11-05T21:57:24.1084809Z F1 = 0.8423 | seuil = 0.82
+2026-11-05T21:57:24.1085250Z OK : modele accepte

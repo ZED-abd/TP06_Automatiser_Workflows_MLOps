@@ -1,0 +1,376 @@
+{
+  "etudiant": "Abdelbaki Zakaria",
+  "filiere_groupe": "5IASDR-G6",
+  "date": "2026-11-05",
+  "prefect_runs": {
+    "workflow_valide": {
+      "id": "e4c6b028-9446-4ef1-947b-b729db7c8939",
+      "name": "ochre-malamute",
+      "state": "Completed",
+      "start_time": "2026-11-05T21:49:15.363835Z",
+      "total_run_time": 5.834221,
+      "tasks": [
+        {
+          "name": "notifier-148",
+          "state": "Completed",
+          "total_run_time": 0.023391,
+          "run_count": 1
+        },
+        {
+          "name": "valider-26d",
+          "state": "Completed",
+          "total_run_time": 0.028137,
+          "run_count": 1
+        },
+        {
+          "name": "lire_metriques-502",
+          "state": "Completed",
+          "total_run_time": 0.031505,
+          "run_count": 1
+        },
+        {
+          "name": "rejouer_pipeline-24f",
+          "state": "Completed",
+          "total_run_time": 4.533138,
+          "run_count": 1
+        }
+      ]
+    },
+    "modele_degrade": {
+      "id": "7a17bfcd-285f-4ba0-964e-d5209bcfd4c7",
+      "name": "beautiful-nyala",
+      "state": "Failed",
+      "start_time": "2026-11-05T21:50:34.697899Z",
+      "total_run_time": 31.113953,
+      "tasks": [
+        {
+          "name": "valider-345",
+          "state": "Failed",
+          "total_run_time": 0.013275,
+          "run_count": 1
+        },
+        {
+          "name": "lire_metriques-5f1",
+          "state": "Completed",
+          "total_run_time": 0.005652,
+          "run_count": 1
+        },
+        {
+          "name": "rejouer_pipeline-751",
+          "state": "Completed",
+          "total_run_time": 29.749467,
+          "run_count": 1
+        }
+      ]
+    },
+    "modele_retabli": {
+      "id": "72c11b63-81c2-4cc0-9522-d457073d3bff",
+      "name": "holistic-lion",
+      "state": "Completed",
+      "start_time": "2026-11-05T21:51:15.318136Z",
+      "total_run_time": 6.2237,
+      "tasks": [
+        {
+          "name": "notifier-39a",
+          "state": "Completed",
+          "total_run_time": 0.025717,
+          "run_count": 1
+        },
+        {
+          "name": "valider-0d4",
+          "state": "Completed",
+          "total_run_time": 0.027381,
+          "run_count": 1
+        },
+        {
+          "name": "lire_metriques-92e",
+          "state": "Completed",
+          "total_run_time": 0.020177,
+          "run_count": 1
+        },
+        {
+          "name": "rejouer_pipeline-d5f",
+          "state": "Completed",
+          "total_run_time": 4.955615,
+          "run_count": 1
+        }
+      ]
+    },
+    "quick_run_serve": {
+      "id": "00237133-6b87-4e26-8d2f-94d3a3de2d8b",
+      "name": "intelligent-scallop",
+      "state": "Completed",
+      "start_time": "2026-11-05T21:55:11.933732Z",
+      "total_run_time": 6.178629,
+      "tasks": [
+        {
+          "name": "notifier-b9a",
+          "state": "Completed",
+          "total_run_time": 0.027716,
+          "run_count": 1
+        },
+        {
+          "name": "valider-a3e",
+          "state": "Completed",
+          "total_run_time": 0.029702,
+          "run_count": 1
+        },
+        {
+          "name": "lire_metriques-309",
+          "state": "Completed",
+          "total_run_time": 0.017945,
+          "run_count": 1
+        },
+        {
+          "name": "rejouer_pipeline-d25",
+          "state": "Completed",
+          "total_run_time": 4.732221,
+          "run_count": 1
+        }
+      ]
+    },
+    "quick_run_worker": {
+      "id": "bcdf309e-b3fd-493e-b730-d86e5d34997a",
+      "name": "mysterious-ocelot",
+      "state": "Completed",
+      "start_time": "2026-11-05T21:58:59.358974Z",
+      "total_run_time": 8.034523,
+      "tasks": [
+        {
+          "name": "notifier-662",
+          "state": "Completed",
+          "total_run_time": 0.022174,
+          "run_count": 1
+        },
+        {
+          "name": "valider-63f",
+          "state": "Completed",
+          "total_run_time": 0.022067,
+          "run_count": 1
+        },
+        {
+          "name": "lire_metriques-605",
+          "state": "Completed",
+          "total_run_time": 0.018623,
+          "run_count": 1
+        },
+        {
+          "name": "rejouer_pipeline-dbf",
+          "state": "Completed",
+          "total_run_time": 6.718105,
+          "run_count": 1
+        }
+      ]
+    }
+  },
+  "ci_runs": [
+    {
+      "id": 42116481369,
+      "commit": "d28e1d447c55c86dce3128a817434a71ac759420",
+      "conclusion": "success",
+      "url": "https://github.com/ZED-abd/TP06_Automatiser_Workflows_MLOps/actions/runs/42116481369",
+      "jobs": [
+        {
+          "id": 127557363089,
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v6",
+              "conclusion": "success"
+            },
+            {
+              "name": "Installer les dependances",
+              "conclusion": "success"
+            },
+            {
+              "name": "Recreer les donnees v2 (le stockage DVC est sur votre poste)",
+              "conclusion": "success"
+            },
+            {
+              "name": "Rejouer le pipeline",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verifier la regle de qualite",
+              "conclusion": "success"
+            },
+            {
+              "name": "Conserver les rapports",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v6",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42116743507,
+      "commit": "09e329d16f4dac6dadfaefaf5fcea2e7549c3fc8",
+      "conclusion": "failure",
+      "url": "https://github.com/ZED-abd/TP06_Automatiser_Workflows_MLOps/actions/runs/42116743507",
+      "jobs": [
+        {
+          "id": 127558276214,
+          "conclusion": "failure",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v6",
+              "conclusion": "success"
+            },
+            {
+              "name": "Installer les dependances",
+              "conclusion": "success"
+            },
+            {
+              "name": "Recreer les donnees v2 (le stockage DVC est sur votre poste)",
+              "conclusion": "success"
+            },
+            {
+              "name": "Rejouer le pipeline",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verifier la regle de qualite",
+              "conclusion": "failure"
+            },
+            {
+              "name": "Conserver les rapports",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v6",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Run actions/checkout@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42117117784,
+      "commit": "9bbc002f82767962f86ed577c2a8c957a7e95052",
+      "conclusion": "success",
+      "url": "https://github.com/ZED-abd/TP06_Automatiser_Workflows_MLOps/actions/runs/42117117784",
+      "jobs": [
+        {
+          "id": 127559591024,
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v6",
+              "conclusion": "success"
+            },
+            {
+              "name": "Installer les dependances",
+              "conclusion": "success"
+            },
+            {
+              "name": "Recreer les donnees v2 (le stockage DVC est sur votre poste)",
+              "conclusion": "success"
+            },
+            {
+              "name": "Rejouer le pipeline",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verifier la regle de qualite",
+              "conclusion": "success"
+            },
+            {
+              "name": "Conserver les rapports",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v6",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serve_sans_executeur": {
+    "id": "5ea249ab-00e3-40f7-9b87-81a0c9e1e35b",
+    "name": "monumental-copperhead",
+    "etat_observe": "Late",
+    "supprime_apres_observation": true
+  },
+  "deploiements": [
+    {
+      "id": "c318ea2e-acf8-4066-b395-384c08dc3e51",
+      "name": "hebdomadaire",
+      "paused": true,
+      "schedules": [
+        {
+          "active": true,
+          "cron": "0 6 * * 1",
+          "timezone": null,
+          "day_or": true
+        }
+      ]
+    },
+    {
+      "id": "54aac97a-bb7d-418a-b754-b462bc531335",
+      "name": "hebdomadaire-pool",
+      "paused": false,
+      "schedules": [
+        {
+          "active": true,
+          "cron": "0 6 * * 1",
+          "timezone": "Africa/Casablanca",
+          "day_or": true
+        }
+      ]
+    }
+  ]
+}
